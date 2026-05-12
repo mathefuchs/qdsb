@@ -1,0 +1,35 @@
+Using device: cpu
+Using time mode: discrete
+Using dataset-specific sigmas: EB=0.25, Cite=0.25, Multi=1.0.
+Fitting raw-data PCA embeddings with 100 components.
+Using SF2M with m-POT minibatch couplings: s=0.8, method=exact.
+Evaluating W1 on full pushed-forward populations.
+Recording quality checkpoints every 1 epochs using MMD.
+
+Dataset: EB (sigma=0.25)
+  seed 0: W1=0.830651 | MMD=0.205421
+  seed 1: W1=0.844066 | MMD=0.210471
+  seed 2: W1=0.836694 | MMD=0.207100
+  seed 3: W1=0.829541 | MMD=0.202529
+  seed 4: W1=0.834772 | MMD=0.209049
+
+Dataset: Cite (sigma=0.25)
+  seed 0: W1=0.819764 | MMD=0.187694
+  seed 1: W1=0.812711 | MMD=0.183006
+  seed 2: W1=0.814864 | MMD=0.185983
+  seed 3: W1=0.806074 | MMD=0.182246
+  seed 4: W1=0.818970 | MMD=0.185156
+
+Dataset: Multi (sigma=1.0)
+  seed 0: W1=0.967280 | MMD=0.220432
+  seed 1: W1=0.962620 | MMD=0.223389
+  seed 2: W1=0.969230 | MMD=0.221534
+  seed 3: W1=0.988852 | MMD=0.229803
+  seed 4: W1=0.991060 | MMD=0.229286
+
+SF2M-mPOT summary (Table 4 style)
+  EB | W1=0.835±0.005 | MMD=0.207±0.003
+  Cite | W1=0.814±0.005 | MMD=0.185±0.002
+  Multi | W1=0.976±0.012 | MMD=0.225±0.004
+
+Saved results to results/output_mmd_sf2m_mpot_cell.json

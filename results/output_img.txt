@@ -1,0 +1,35 @@
+Using device: cuda
+Algorithms: QDSB (ours), SF2M, LightSB-M
+Translation task: adult -> child
+Latent artifact: raw_images: source_train=data/ffhq/adult/train, target_train=data/ffhq/child/train, source_eval=data/ffhq/adult/eval, target_eval=data/ffhq/child/eval; alae_config=ALAE/configs/ffhq.yaml, alae_checkpoint=ALAE/training_artifacts/ffhq/model_157.pth
+Latent dimension: 512
+FFHQ root: data/ffhq
+FFHQ age groups: adult=('20-29', '30-39', '40-49'), child=('0-2', '3-6', '7-9')
+ALAE config: ALAE/configs/ffhq.yaml
+ALAE checkpoint: ALAE/training_artifacts/ffhq/model_157.pth
+ALAE resolution: 1024
+Train source/target: 39899 / 8886
+Eval source/target: 4433 / 987
+Sigma: 0.1
+OT method: exact
+Final latent-space W1/MMD evaluation disabled.
+Periodic latent-space MMD checkpoints disabled.
+Timed training budget per algorithm/seed: 1000s.
+Epoch cap disabled.
+Saving 50 decoded images per algorithm/seed to results/output_img_samples.
+
+Algorithm: QDSB (ours)
+  seed 0: elapsed=1000.04s | epochs=6464
+
+Algorithm: SF2M
+  seed 0: elapsed=1001.12s | epochs=735
+
+Algorithm: LightSB-M
+  seed 0: elapsed=1063.72s | epochs=16
+
+Image latent translation summary
+  QDSB (ours) | Time=1000.04s | Epochs=6464.0
+  SF2M | Time=1001.12s | Epochs=735.0
+  LightSB-M | Time=1063.72s | Epochs=16.0
+
+Saved raw metrics to results/output_img.json

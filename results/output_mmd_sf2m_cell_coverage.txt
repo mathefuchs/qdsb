@@ -1,0 +1,39 @@
+Using device: cpu
+Using time mode: discrete
+Using dataset-specific sigmas: EB=0.25, Cite=0.25, Multi=1.0.
+Fitting raw-data PCA embeddings with 100 components.
+Using coverage acceleration with 256 anchors per marginal.
+Coverage anchor selection: gon.
+Coverage anchor weight temperature: 1.000.
+Coverage point matching mode: random.
+Refreshing coverage anchors every 100 epochs.
+Evaluating W1 on full pushed-forward populations.
+Recording quality checkpoints every 1 epochs using MMD.
+
+Dataset: EB (sigma=0.25)
+  seed 0: W1=0.802869 | MMD=0.190599
+  seed 1: W1=0.801245 | MMD=0.191510
+  seed 2: W1=0.821795 | MMD=0.198086
+  seed 3: W1=0.824126 | MMD=0.195201
+  seed 4: W1=0.810261 | MMD=0.193584
+
+Dataset: Cite (sigma=0.25)
+  seed 0: W1=0.802942 | MMD=0.186450
+  seed 1: W1=0.786987 | MMD=0.180328
+  seed 2: W1=0.794023 | MMD=0.183587
+  seed 3: W1=0.782006 | MMD=0.179893
+  seed 4: W1=0.795930 | MMD=0.183054
+
+Dataset: Multi (sigma=1.0)
+  seed 0: W1=1.003757 | MMD=0.229447
+  seed 1: W1=0.994452 | MMD=0.230259
+  seed 2: W1=1.000512 | MMD=0.228969
+  seed 3: W1=1.013030 | MMD=0.236250
+  seed 4: W1=1.013222 | MMD=0.232890
+
+SF2M-Exact summary (Table 4 style)
+  EB | W1=0.812±0.009 | MMD=0.194±0.003
+  Cite | W1=0.792±0.007 | MMD=0.183±0.002
+  Multi | W1=1.005±0.007 | MMD=0.232±0.003
+
+Saved raw metrics to results/output_mmd_sf2m_cell_coverage.json

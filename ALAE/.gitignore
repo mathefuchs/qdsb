@@ -1,0 +1,13 @@
+training_artifacts/ffhq/model_157.pth
+
+*.pyc
+*.ckpt
+*.mat
+
+__pycache__/
+.idea/
+*.pdf
+# *.png
+*.eps
+*.txt
+results*/

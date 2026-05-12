@@ -1,0 +1,157 @@
+Using device: cpu
+Algorithms: SF2M, SF2M + mPOT, QDSB (ours), DSB, DSBM, LightSB-M
+Datasets: 8Gaussians -> Moons, Gaussian -> Moons, Gaussian -> 8Gaussians
+Sigma: 0.25
+OT method: exact
+Training samples per endpoint: 16384
+Eval samples per endpoint: 4096
+Evaluating final W1/MMD on the full evaluation populations.
+Recording untimed MMD checkpoints every 1 epochs.
+
+Algorithm: SF2M
+  Dataset: 8Gaussians -> Moons
+    seed 0: W1=0.353785 | MMD=0.045672
+    seed 1: W1=0.313947 | MMD=0.013122
+    seed 2: W1=0.379436 | MMD=0.035399
+    seed 3: W1=0.321132 | MMD=0.006287
+    seed 4: W1=0.319790 | MMD=0.015935
+  Dataset: Gaussian -> Moons
+    seed 0: W1=0.199348 | MMD=0.019163
+    seed 1: W1=0.174997 | MMD=0.000000
+    seed 2: W1=0.182901 | MMD=0.000000
+    seed 3: W1=0.169292 | MMD=0.000000
+    seed 4: W1=0.192604 | MMD=0.013057
+  Dataset: Gaussian -> 8Gaussians
+    seed 0: W1=0.235148 | MMD=0.011114
+    seed 1: W1=0.208074 | MMD=0.000000
+    seed 2: W1=0.208386 | MMD=0.002642
+    seed 3: W1=0.402016 | MMD=0.040576
+    seed 4: W1=0.173052 | MMD=0.000000
+
+Algorithm: SF2M + mPOT
+  Dataset: 8Gaussians -> Moons
+    seed 0: W1=0.413064 | MMD=0.085714
+    seed 1: W1=0.476104 | MMD=0.092398
+    seed 2: W1=0.381465 | MMD=0.069686
+    seed 3: W1=0.512491 | MMD=0.099021
+    seed 4: W1=0.494078 | MMD=0.101686
+  Dataset: Gaussian -> Moons
+    seed 0: W1=0.836451 | MMD=0.181950
+    seed 1: W1=0.858618 | MMD=0.174776
+    seed 2: W1=0.870491 | MMD=0.186193
+    seed 3: W1=0.848506 | MMD=0.189694
+    seed 4: W1=0.813012 | MMD=0.172176
+  Dataset: Gaussian -> 8Gaussians
+    seed 0: W1=0.471349 | MMD=0.058264
+    seed 1: W1=0.457709 | MMD=0.055598
+    seed 2: W1=0.406459 | MMD=0.049851
+    seed 3: W1=0.593972 | MMD=0.067999
+    seed 4: W1=0.427506 | MMD=0.052741
+
+Algorithm: QDSB (ours)
+  Dataset: 8Gaussians -> Moons
+    seed 0: W1=0.226111 | MMD=0.015122
+    seed 1: W1=0.234691 | MMD=0.023102
+    seed 2: W1=0.310468 | MMD=0.032386
+    seed 3: W1=0.251616 | MMD=0.009944
+    seed 4: W1=0.237100 | MMD=0.035228
+  Dataset: Gaussian -> Moons
+    seed 0: W1=0.172001 | MMD=0.012294
+    seed 1: W1=0.155784 | MMD=0.014463
+    seed 2: W1=0.171744 | MMD=0.022016
+    seed 3: W1=0.137508 | MMD=0.000000
+    seed 4: W1=0.143926 | MMD=0.000000
+  Dataset: Gaussian -> 8Gaussians
+    seed 0: W1=0.203612 | MMD=0.000000
+    seed 1: W1=0.207646 | MMD=0.000000
+    seed 2: W1=0.201457 | MMD=0.000000
+    seed 3: W1=0.401066 | MMD=0.041568
+    seed 4: W1=0.180895 | MMD=0.000000
+
+Algorithm: DSB
+  Dataset: 8Gaussians -> Moons
+    seed 0: W1=0.881100 | MMD=0.193076
+    seed 1: W1=0.851219 | MMD=0.195853
+    seed 2: W1=0.815892 | MMD=0.186122
+    seed 3: W1=1.119976 | MMD=0.214870
+    seed 4: W1=1.132627 | MMD=0.222000
+  Dataset: Gaussian -> Moons
+    seed 0: W1=0.769035 | MMD=0.174991
+    seed 1: W1=0.713052 | MMD=0.152056
+    seed 2: W1=0.691092 | MMD=0.162443
+    seed 3: W1=0.686129 | MMD=0.142721
+    seed 4: W1=0.920579 | MMD=0.200934
+  Dataset: Gaussian -> 8Gaussians
+    seed 0: W1=2.410029 | MMD=0.311902
+    seed 1: W1=2.031395 | MMD=0.263468
+    seed 2: W1=1.806771 | MMD=0.234110
+    seed 3: W1=2.074974 | MMD=0.265761
+    seed 4: W1=1.683560 | MMD=0.213203
+
+Algorithm: DSBM
+  Dataset: 8Gaussians -> Moons
+    seed 0: W1=0.789359 | MMD=0.142991
+    seed 1: W1=0.734648 | MMD=0.094046
+    seed 2: W1=0.958995 | MMD=0.119815
+    seed 3: W1=1.165003 | MMD=0.176960
+    seed 4: W1=1.004023 | MMD=0.160670
+  Dataset: Gaussian -> Moons
+    seed 0: W1=0.442124 | MMD=0.090962
+    seed 1: W1=0.735488 | MMD=0.145618
+    seed 2: W1=1.014691 | MMD=0.169241
+    seed 3: W1=0.801577 | MMD=0.123049
+    seed 4: W1=0.736594 | MMD=0.110640
+  Dataset: Gaussian -> 8Gaussians
+    seed 0: W1=0.570602 | MMD=0.053285
+    seed 1: W1=0.774402 | MMD=0.088693
+    seed 2: W1=1.436456 | MMD=0.167065
+    seed 3: W1=1.078230 | MMD=0.125214
+    seed 4: W1=0.735395 | MMD=0.082504
+
+Algorithm: LightSB-M
+  Dataset: 8Gaussians -> Moons
+    seed 0: W1=4.508999 | MMD=0.630664
+    seed 1: W1=4.899203 | MMD=0.649231
+    seed 2: W1=4.724676 | MMD=0.642439
+    seed 3: W1=4.817766 | MMD=0.643823
+    seed 4: W1=5.154208 | MMD=0.656715
+  Dataset: Gaussian -> Moons
+    seed 0: W1=1.134155 | MMD=0.214836
+    seed 1: W1=1.242042 | MMD=0.235812
+    seed 2: W1=1.187065 | MMD=0.222327
+    seed 3: W1=1.178943 | MMD=0.222982
+    seed 4: W1=1.220077 | MMD=0.226133
+  Dataset: Gaussian -> 8Gaussians
+    seed 0: W1=12.050541 | MMD=0.597000
+    seed 1: W1=12.608932 | MMD=0.601367
+    seed 2: W1=12.804739 | MMD=0.607332
+    seed 3: W1=12.876736 | MMD=0.605389
+    seed 4: W1=12.959185 | MMD=0.606820
+
+Toy 2D summary
+  SF2M
+    8Gaussians -> Moons | W1=0.338±0.025 | MMD=0.023±0.015
+    Gaussian -> Moons | W1=0.184±0.011 | MMD=0.006±0.008
+    Gaussian -> 8Gaussians | W1=0.245±0.081 | MMD=0.011±0.015
+  SF2M + mPOT
+    8Gaussians -> Moons | W1=0.455±0.050 | MMD=0.090±0.011
+    Gaussian -> Moons | W1=0.845±0.020 | MMD=0.181±0.007
+    Gaussian -> 8Gaussians | W1=0.471±0.065 | MMD=0.057±0.006
+  QDSB (ours)
+    8Gaussians -> Moons | W1=0.252±0.030 | MMD=0.023±0.010
+    Gaussian -> Moons | W1=0.156±0.014 | MMD=0.010±0.009
+    Gaussian -> 8Gaussians | W1=0.239±0.082 | MMD=0.008±0.017
+  DSB
+    8Gaussians -> Moons | W1=0.960±0.137 | MMD=0.202±0.014
+    Gaussian -> Moons | W1=0.756±0.087 | MMD=0.167±0.020
+    Gaussian -> 8Gaussians | W1=2.001±0.250 | MMD=0.258±0.033
+  DSBM
+    8Gaussians -> Moons | W1=0.930±0.155 | MMD=0.139±0.029
+    Gaussian -> Moons | W1=0.746±0.183 | MMD=0.128±0.027
+    Gaussian -> 8Gaussians | W1=0.919±0.306 | MMD=0.103±0.039
+  LightSB-M
+    8Gaussians -> Moons | W1=4.821±0.212 | MMD=0.645±0.009
+    Gaussian -> Moons | W1=1.192±0.037 | MMD=0.224±0.007
+    Gaussian -> 8Gaussians | W1=12.660±0.326 | MMD=0.604±0.004
+
+Saved raw metrics to results/output_toy_2d_suite.json

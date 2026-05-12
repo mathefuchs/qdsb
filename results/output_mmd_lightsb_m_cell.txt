@@ -1,0 +1,36 @@
+Using device: cpu
+Using time mode: discrete
+Using dataset-specific sigmas: EB=0.25, Cite=0.25, Multi=1.0.
+Fitting raw-data PCA embeddings with 100 components.
+Using LightSB-M with 512 Gaussian components and input plan ot.
+Using minibatch OT method: exact.
+Evaluating W1 on full pushed-forward populations.
+Recording quality checkpoints every 1 epochs using MMD.
+
+Dataset: EB (sigma=0.25)
+  seed 0: W1=0.828212 | MMD=0.189303
+  seed 1: W1=0.837458 | MMD=0.189409
+  seed 2: W1=0.826804 | MMD=0.190348
+  seed 3: W1=0.825131 | MMD=0.189416
+  seed 4: W1=0.831045 | MMD=0.189572
+
+Dataset: Cite (sigma=0.25)
+  seed 0: W1=0.810572 | MMD=0.175706
+  seed 1: W1=0.807879 | MMD=0.176647
+  seed 2: W1=0.810508 | MMD=0.175948
+  seed 3: W1=0.809782 | MMD=0.175267
+  seed 4: W1=0.810848 | MMD=0.175520
+
+Dataset: Multi (sigma=1.0)
+  seed 0: W1=1.179132 | MMD=0.242985
+  seed 1: W1=1.166738 | MMD=0.244503
+  seed 2: W1=1.179283 | MMD=0.245579
+  seed 3: W1=1.180997 | MMD=0.243490
+  seed 4: W1=1.178042 | MMD=0.245978
+
+LightSB-M summary (Table 4 style)
+  EB | W1=0.830±0.004 | MMD=0.190±0.000
+  Cite | W1=0.810±0.001 | MMD=0.176±0.000
+  Multi | W1=1.177±0.005 | MMD=0.245±0.001
+
+Saved results to results/output_mmd_lightsb_m_cell.json

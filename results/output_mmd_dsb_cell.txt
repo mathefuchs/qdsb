@@ -1,0 +1,70 @@
+Using device: cpu
+Using time mode: discrete
+Fitting raw-data PCA embeddings with 100 components.
+DSB budget matching: matching SF2M epochs=1000 with n_ipf=20 and per-leave-out auto num_iter.
+DSB hyperparameters: num_steps=20, gamma=[0.01, 0.01]
+Evaluating W1 on full pushed-forward populations.
+Recording quality checkpoints every 1 matched SF2M epochs using MMD.
+
+Dataset: EB
+  missing 1: matching SF2M budget (epochs=1000, steps/epoch=25, target_updates=25000) with DSB num_iter=625 (actual_updates=25000)
+  missing 2: matching SF2M budget (epochs=1000, steps/epoch=28, target_updates=28000) with DSB num_iter=700 (actual_updates=28000)
+  missing 3: matching SF2M budget (epochs=1000, steps/epoch=28, target_updates=28000) with DSB num_iter=700 (actual_updates=28000)
+  seed 0: W1=0.979922 | MMD=0.223273
+  missing 1: matching SF2M budget (epochs=1000, steps/epoch=25, target_updates=25000) with DSB num_iter=625 (actual_updates=25000)
+  missing 2: matching SF2M budget (epochs=1000, steps/epoch=28, target_updates=28000) with DSB num_iter=700 (actual_updates=28000)
+  missing 3: matching SF2M budget (epochs=1000, steps/epoch=28, target_updates=28000) with DSB num_iter=700 (actual_updates=28000)
+  seed 1: W1=0.918689 | MMD=0.199013
+  missing 1: matching SF2M budget (epochs=1000, steps/epoch=25, target_updates=25000) with DSB num_iter=625 (actual_updates=25000)
+  missing 2: matching SF2M budget (epochs=1000, steps/epoch=28, target_updates=28000) with DSB num_iter=700 (actual_updates=28000)
+  missing 3: matching SF2M budget (epochs=1000, steps/epoch=28, target_updates=28000) with DSB num_iter=700 (actual_updates=28000)
+  seed 2: W1=0.996949 | MMD=0.225163
+  missing 1: matching SF2M budget (epochs=1000, steps/epoch=25, target_updates=25000) with DSB num_iter=625 (actual_updates=25000)
+  missing 2: matching SF2M budget (epochs=1000, steps/epoch=28, target_updates=28000) with DSB num_iter=700 (actual_updates=28000)
+  missing 3: matching SF2M budget (epochs=1000, steps/epoch=28, target_updates=28000) with DSB num_iter=700 (actual_updates=28000)
+  seed 3: W1=0.976568 | MMD=0.219776
+  missing 1: matching SF2M budget (epochs=1000, steps/epoch=25, target_updates=25000) with DSB num_iter=625 (actual_updates=25000)
+  missing 2: matching SF2M budget (epochs=1000, steps/epoch=28, target_updates=28000) with DSB num_iter=700 (actual_updates=28000)
+  missing 3: matching SF2M budget (epochs=1000, steps/epoch=28, target_updates=28000) with DSB num_iter=700 (actual_updates=28000)
+  seed 4: W1=1.047773 | MMD=0.236738
+
+Dataset: Cite
+  missing 1: matching SF2M budget (epochs=1000, steps/epoch=34, target_updates=34000) with DSB num_iter=850 (actual_updates=34000)
+  missing 2: matching SF2M budget (epochs=1000, steps/epoch=30, target_updates=30000) with DSB num_iter=750 (actual_updates=30000)
+  seed 0: W1=0.956125 | MMD=0.206717
+  missing 1: matching SF2M budget (epochs=1000, steps/epoch=34, target_updates=34000) with DSB num_iter=850 (actual_updates=34000)
+  missing 2: matching SF2M budget (epochs=1000, steps/epoch=30, target_updates=30000) with DSB num_iter=750 (actual_updates=30000)
+  seed 1: W1=1.232090 | MMD=0.282099
+  missing 1: matching SF2M budget (epochs=1000, steps/epoch=34, target_updates=34000) with DSB num_iter=850 (actual_updates=34000)
+  missing 2: matching SF2M budget (epochs=1000, steps/epoch=30, target_updates=30000) with DSB num_iter=750 (actual_updates=30000)
+  seed 2: W1=1.226428 | MMD=0.282836
+  missing 1: matching SF2M budget (epochs=1000, steps/epoch=34, target_updates=34000) with DSB num_iter=850 (actual_updates=34000)
+  missing 2: matching SF2M budget (epochs=1000, steps/epoch=30, target_updates=30000) with DSB num_iter=750 (actual_updates=30000)
+  seed 3: W1=1.012637 | MMD=0.226351
+  missing 1: matching SF2M budget (epochs=1000, steps/epoch=34, target_updates=34000) with DSB num_iter=850 (actual_updates=34000)
+  missing 2: matching SF2M budget (epochs=1000, steps/epoch=30, target_updates=30000) with DSB num_iter=750 (actual_updates=30000)
+  seed 4: W1=1.000897 | MMD=0.227218
+
+Dataset: Multi
+  missing 1: matching SF2M budget (epochs=1000, steps/epoch=38, target_updates=38000) with DSB num_iter=950 (actual_updates=38000)
+  missing 2: matching SF2M budget (epochs=1000, steps/epoch=38, target_updates=38000) with DSB num_iter=950 (actual_updates=38000)
+  seed 0: W1=1.512042 | MMD=0.352416
+  missing 1: matching SF2M budget (epochs=1000, steps/epoch=38, target_updates=38000) with DSB num_iter=950 (actual_updates=38000)
+  missing 2: matching SF2M budget (epochs=1000, steps/epoch=38, target_updates=38000) with DSB num_iter=950 (actual_updates=38000)
+  seed 1: W1=1.438272 | MMD=0.333122
+  missing 1: matching SF2M budget (epochs=1000, steps/epoch=38, target_updates=38000) with DSB num_iter=950 (actual_updates=38000)
+  missing 2: matching SF2M budget (epochs=1000, steps/epoch=38, target_updates=38000) with DSB num_iter=950 (actual_updates=38000)
+  seed 2: W1=1.495037 | MMD=0.342913
+  missing 1: matching SF2M budget (epochs=1000, steps/epoch=38, target_updates=38000) with DSB num_iter=950 (actual_updates=38000)
+  missing 2: matching SF2M budget (epochs=1000, steps/epoch=38, target_updates=38000) with DSB num_iter=950 (actual_updates=38000)
+  seed 3: W1=1.148425 | MMD=0.252608
+  missing 1: matching SF2M budget (epochs=1000, steps/epoch=38, target_updates=38000) with DSB num_iter=950 (actual_updates=38000)
+  missing 2: matching SF2M budget (epochs=1000, steps/epoch=38, target_updates=38000) with DSB num_iter=950 (actual_updates=38000)
+  seed 4: W1=1.315635 | MMD=0.311259
+
+DSB summary (Table 4 style)
+  EB | W1=0.984±0.041 | MMD=0.221±0.012
+  Cite | W1=1.086±0.119 | MMD=0.245±0.031
+  Multi | W1=1.382±0.136 | MMD=0.318±0.036
+
+Saved results to results/output_mmd_dsb_cell.json

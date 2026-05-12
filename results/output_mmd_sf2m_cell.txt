@@ -1,0 +1,34 @@
+Using device: cpu
+Using time mode: discrete
+Using dataset-specific sigmas: EB=0.25, Cite=0.25, Multi=1.0.
+Fitting raw-data PCA embeddings with 100 components.
+Evaluating W1 on full pushed-forward populations.
+Recording quality checkpoints every 1 epochs using MMD.
+
+Dataset: EB (sigma=0.25)
+  seed 0: W1=0.808230 | MMD=0.188413
+  seed 1: W1=0.809812 | MMD=0.191637
+  seed 2: W1=0.804751 | MMD=0.190187
+  seed 3: W1=0.810897 | MMD=0.189054
+  seed 4: W1=0.816970 | MMD=0.193056
+
+Dataset: Cite (sigma=0.25)
+  seed 0: W1=0.800476 | MMD=0.183613
+  seed 1: W1=0.802309 | MMD=0.182654
+  seed 2: W1=0.785052 | MMD=0.177579
+  seed 3: W1=0.784896 | MMD=0.178093
+  seed 4: W1=0.795433 | MMD=0.178846
+
+Dataset: Multi (sigma=1.0)
+  seed 0: W1=1.001356 | MMD=0.226994
+  seed 1: W1=1.011750 | MMD=0.231305
+  seed 2: W1=1.003694 | MMD=0.227287
+  seed 3: W1=1.038377 | MMD=0.239974
+  seed 4: W1=1.020483 | MMD=0.231395
+
+SF2M-Exact summary (Table 4 style)
+  EB | W1=0.810±0.004 | MMD=0.190±0.002
+  Cite | W1=0.794±0.007 | MMD=0.180±0.002
+  Multi | W1=1.015±0.013 | MMD=0.231±0.005
+
+Saved raw metrics to results/output_mmd_sf2m_cell.json

@@ -1,0 +1,36 @@
+[project]
+name = "qdsb"
+version = "1.0.0"
+description = "Code and data of QDSB"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "torch>=2.0.0",
+    "numpy",
+    "matplotlib",
+    "tqdm",
+    "transformers>=4.57.0",
+    "scikit-learn",
+    "torchvision>=0.25.0",
+    "lightning-bolts>=0.7.0",
+    "scipy>=1.17.1",
+    "pandas>=3.0.1",
+    "scprep>=1.1.0",
+    "scanpy>=1.12",
+    "torchdyn>=1.0.6",
+    "pot>=0.9.6.post1",
+    "torchdiffeq>=0.2.5",
+    "absl-py>=2.4.0",
+    "clean-fid>=0.1.35",
+    "setuptools==80",
+    "hdf5plugin>=6.0.0",
+    "tasklogger>=1.2.0",
+    "phate>=2.0.0",
+    "leidenalg>=0.11.0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.1",
+    "snakeviz>=2.2.2",
+]
